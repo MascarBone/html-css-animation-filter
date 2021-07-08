@@ -30,6 +30,10 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 1s ease-in 0s;
+}
+.ex-4-square:hover{
+    background: none;
 }
 .ex-5-square {
     margin: 20px;

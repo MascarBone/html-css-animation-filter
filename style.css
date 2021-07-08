@@ -133,6 +133,29 @@
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    animation: almost-spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes almost-spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    28%{
+        transform: rotate(90deg);
+    }
+    56%{
+        transform: rotate(180deg);
+    }
+    84%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;

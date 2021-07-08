@@ -41,6 +41,17 @@
     height: 60px;
     background: red;
 }
+/* Il contenitore .well non si adatta al quadrato */
+.ex-5-square:hover {
+    width: 119px;
+    height: 119px;
+    margin: 0;
+}
+.ex-5-square:active {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }

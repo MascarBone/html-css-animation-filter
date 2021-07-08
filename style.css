@@ -5,15 +5,17 @@
     /* transition: background-color 3s ease 0s; */
     transition: all 3s ease 0s;
 }
-
 .ex-1-square:hover {
     background-color: red;
 }
-
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: width 3s ease 0s;
+}
+.ex-2-square:active {
+    width: 100%;
 }
 .ex-3-square {
     width: 100px;

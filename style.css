@@ -58,6 +58,12 @@
 .ex-6-img:hover {
     filter: grayscale(100%);
 }
+.ex-7-img {
+    transition: filter 3s linear 0s;
+}
+.ex-7-img:hover {
+    filter: hue-rotate(180deg) opacity(20%);
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;

@@ -90,10 +90,13 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: reverse;
 }
 @keyframes spin {
     /* from {transform: rotate(360deg);}
     to {transform: rotate(0deg);} */
+    /*
+    Spin in senso antiorario senza il reverse
     0%{
         transform: rotate(360deg);
     }
@@ -108,6 +111,23 @@
     }
     100%{
         transform: rotate(0deg);
+    }
+    */
+    /* Spin in senso antiorario utilizzando il reverse */
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 .ex-11-icon {

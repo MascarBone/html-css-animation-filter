@@ -185,3 +185,25 @@
     width: 60px;
     height: 20px;
 }
+.ex-12-button:hover .ex-12-top-white{
+    animation: around-top;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: around-bot;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes around-top {
+    from {left: 10%;}
+    to {left: 70%;}
+}
+@keyframes around-bot {
+    from {right: 20%;}
+    to {right: 70%;}
+}

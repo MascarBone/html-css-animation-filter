@@ -186,24 +186,50 @@
     height: 20px;
 }
 .ex-12-button:hover .ex-12-top-white{
-    animation: around-top;
+    animation: around-top12;
     animation-duration: 1s;
     animation-iteration-count: 2;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: around-bot;
+    animation: around-bot12;
     animation-duration: 1s;
     animation-iteration-count: 2;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
-@keyframes around-top {
+@keyframes around-top12 {
     from {left: 10%;}
     to {left: 70%;}
 }
-@keyframes around-bot {
+@keyframes around-bot12 {
     from {right: 20%;}
     to {right: 70%;}
+}
+.ex-13-button:hover .ex-13-top-white{
+    animation: around-top13;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes around-top13 {
+    0% {left: 10%;}
+    30% {left: 100%; top:-10%;}
+    45% {left: 100%; top:100%;}
+    75% {left: -20%; top:100%;}
+    90% {left: -20%; top: -10%;}
+    100% {left: 10%;}    
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: around-bot13;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes around-bot13 {
+    0% {right: 10%;}
+    30% {right: 100%; bottom:-10%;}
+    45% {right: 100%; bottom:100%;}
+    75% {right: -20%; bottom:100%;}
+    90% {right: -20%; bottom: -10%;}
+    100% {right: 10%;}    
 }
